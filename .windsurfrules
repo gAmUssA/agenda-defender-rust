@@ -1,0 +1,12 @@
+for Tauri use following dependencies and versions
+
+Tauri Core Ecosystem Releases
+tauri v2.2.0
+@tauri-apps/api v2.2.0
+tauri-cli (Rust) v2.2.2
+@tauri-apps/cli (JavaScript) v2.2.2
+tauri-bundler v2.2.0
+wry v0.48.0
+tao v0.31.1
+
+don't use prerelease

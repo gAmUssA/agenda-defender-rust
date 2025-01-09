@@ -1,0 +1,23 @@
+{
+  "name": "agenda-defender",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "serve": "npx http-server src -p 1420",
+    "clean": "rm -rf node_modules dist src-tauri/target && cd src-tauri && cargo clean",
+    "clean:cache": "npm cache clean --force",
+    "clean:all": "npm run clean && npm run clean:cache",
+    "rebuild": "npm run clean:all && npm install",
+    "dev:fresh": "npm run rebuild && npm run dev",
+    "build": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.2.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.2.2",
+    "http-server": "^14.1.1"
+  }
+}
