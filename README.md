@@ -55,6 +55,32 @@ The built application will be available in:
 - `src-tauri/target/release/bundle/` - Contains platform-specific installers
 - `src-tauri/target/release/` - Contains the executable
 
+## Releases
+
+You can download the latest version of Agenda Defender from the [Releases](https://github.com/yourusername/agenda-defender-rust/releases) page. We provide installers for:
+
+- Windows (.msi)
+- macOS (.dmg)
+- Linux (.deb, .AppImage)
+
+### Version Scheme
+
+We use semantic versioning (MAJOR.MINOR.PATCH):
+
+- MAJOR version for incompatible API changes
+- MINOR version for new features in a backwards compatible manner
+- PATCH version for backwards compatible bug fixes
+
+To create a new release:
+
+1. Update version in `package.json` and `src-tauri/tauri.conf.json`
+2. Create and push a new tag:
+```bash
+git tag -a v1.0.0 -m "Release v1.0.0"
+git push origin v1.0.0
+```
+3. GitHub Actions will automatically build and create a new release
+
 ## Project Structure
 
 ```
