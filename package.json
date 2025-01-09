@@ -11,7 +11,7 @@
     "clean:all": "npm run clean && npm run clean:cache",
     "rebuild": "npm run clean:all && npm install",
     "dev:fresh": "npm run rebuild && npm run dev",
-    "build": "tauri build",
+    "build": "tauri build --release",
     "tauri": "tauri"
   },
   "dependencies": {
