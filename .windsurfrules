@@ -10,3 +10,4 @@ wry v0.48.0
 tao v0.31.1
 
 don't use prerelease
+to interact with github use GH Cli 
